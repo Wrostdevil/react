@@ -1,0 +1,4 @@
+Import and export 
+export(named and default)
+
+<script src="" Type="module"></script>  ---->type is mandatory to use while importimg or exporting anything from the multiple files
