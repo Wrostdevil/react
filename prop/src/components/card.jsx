@@ -1,17 +1,17 @@
 import React from 'react'
 
-const card = () => {
+const card = (props) => {
+  console.log(props);
+  console.log(props.user);
+  console.log(props.age);
+
   return (
-    <div className='parent'>
       <div className="card">
-        <img src='https://images.unsplash.com/photo-1743105351262-3f9e6944920a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'></img>
-        <h1>Shakti Prosad Dey
-          </h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, accusamus. 
-          </p>
-          <button>View Profile</button>
+        <img src={props.a}></img>
+        <h1>{props.user}</h1>
+          <p>I am  b.tech 3rd year student and {props.age} years old.</p>
+          <button >View Profile</button>
         </div>
-    </div>
   )
 }
 
